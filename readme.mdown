@@ -1,5 +1,9 @@
 # jQuery fitImage
 
+### Demo
+
+[demo.html](http://dl.dropbox.com/u/3162720/jquery.fitimage/demo.html)
+
 ***
 *Copyright (c) 2011 Joe Westhead [@joewesthead](http://twitter.com/joewesthead)
 Dual licensed under the MIT and GPL licenses.
