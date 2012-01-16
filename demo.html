@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>jQuery fitImage</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://dl.dropbox.com/u/3162720/jquery.fitimage/jquery.fitimage.min.js"></script>
+	<style type="text/css">
+		#with-fitImage {
+		    margin: 20px;
+		    border: 1px solid #a00;
+		    width: 400px;
+		    height: 300px;
+		    overflow: hidden; /*Important*/
+		}
+		#without-fitImage {
+		    margin: 20px;
+		    border: 1px solid #a00;
+		    width: 400px;
+		    height: 300px;
+		    overflow: hidden; /*Important*/
+		    background: #a00;
+		}
+		#without-fitImage img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h1>With fitImage:</h1>
+	<div id="with-fitImage">
+	    <!-- An image of which we don't know the dimensions -->
+	    <img src="https://graph.facebook.com/98423808305/picture?type=normal" />
+	</div>
+	<h1>Without fitImage:</h1>
+	<div id="without-fitImage">
+	    <!-- An image of which we don't know the dimensions -->
+	    <img src="https://graph.facebook.com/98423808305/picture?type=normal" />
+	</div>
+	<script type="text/javascript">
+  	jQuery(document).ready(function() {		                    
+		
+  		$('#with-fitImage img').fitImage();
+  		
+	});
+	</script>
+</body>
+</html>
