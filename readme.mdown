@@ -1,0 +1,33 @@
+# jQuery fitImage
+
+***
+*Copyright (c) 2011 Joe Westhead [@joewesthead](http://twitter.com/joewesthead)
+Dual licensed under the MIT and GPL licenses.
+Uses the same license as jQuery, see:
+http://jquery.org/license*
+
+*@version 0.2*
+***
+
+This plugin is useful for occasions when you are pulling images from an external source
+and you are unsure what their dimensions are, but still need to fit the image within a
+container of specific dimensions.
+
+e.g. your `<div><img src="http://graph.facebook.com/xxxxxx"></div>`
+
+The plugin performs the following:
+1. Detects hidden images & temporarily shows them (off screen)
+2. Compares ratios of dimensions to work out whether height or width should be scaled first
+3. Re-hide hidden images
+4. Apply vertical or horizontal offsets to center the image
+
+
+*Example usage:*
+`$('.thumbnail img').fitImage();`
+
+IMPORTANT: Make sure the container has `overflow : hidden` in its CSS,
+or else the image will be visible beyond the confines of the container.
+
+Credit to Davide Petrillo for his [evenIfHidden](http://petr.illodavi.de/jquery.evenIfHidden/jquery.evenifhidden.js) plugin, which helps get the dimensions of hidden elements
+
+This is my first jQuery plugin, be nice!
